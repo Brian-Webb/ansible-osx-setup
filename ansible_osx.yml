@@ -237,6 +237,14 @@
         asdf install elixir 1.12.3-otp-24
         asdf global elixir 1.12.3-otp-24
         mix local.hex --force
+        
+        
+    - name: "Install default php"
+      shell: |
+        source /Users/{{ lookup('env', 'USER') }}/.asdf/asdf.sh
+        asdf install php 8.2
+        asdf global php 8.2
+        mix local.hex --force
 
     - name: Install npm packages
       shell: npm global add {{ item }}
