@@ -29,25 +29,29 @@
         name: "{{ item }}"
       ignore_errors: yes
       with_items:
-        - 1password
-        - android-sdk
-        - android-studio
+        - adobe-creative-cloud
+        - chrome-devtools
+        - chrome-driver
         - datagrip
+        - discord
         - docker
-        - dropbox
         - figma
+        - gitkraken
+        - gitkraken-cli
         - google-chrome
-        - google-cloud-sdk
         - iterm2
-        - kindle
+        - lastpass
         - ngrok
+        - phpstorm
+        - postman
+        - postman-agent
+        - postman-cli
+        - pycharm
+        - rider
         - slack
         - sublime-text
-        - telegram
         - visual-studio-code
-        - vlc
         - zoom
-        - tuple
 
     - name: "Install homebrew packages"
       community.general.homebrew:
